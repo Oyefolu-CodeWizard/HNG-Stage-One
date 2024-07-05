@@ -8,10 +8,7 @@
     <script defer src="app.js"></script>
   </head>
   <body>
-    <header>
-      <marquee behavior="" direction="left"><h1>My Tech Goals</h1></marquee>
-    </header>
-    <main>
+    <nav>
       <div class="profile">
         <img
           src="./images/toyyiboyefolu.jpg"
@@ -22,54 +19,120 @@
         />
         <div data-testid="slackDisplayName">Oyefolu Toyyib</div>
       </div>
-      <div class="info">
-        <p>
-          Current Time in UTC:
-          <span id="currentTimeUTC" data-testid="currentTimeUTC"></span>
-        </p>
-        <p>
-          Current Day: <span id="currentDay" data-testid="currentDay"></span>
-        </p>
-        <p>
-          Slack Email:
-          <span data-testid="slackEmail">oyefolutoyyib16@gmail.com</span>
-        </p>
+      <div class="mode-container">
+        <div class="mode">Light Mode</div>
+
+        <label class="switch">
+          <input type="checkbox" />
+          <div class="slider round"></div>
+        </label>
       </div>
-      <div class="goals">
-        <h2>My Tech Goals for the Next 2 Years</h2>
-        <ul>
-          <li>
-            Primary objective 1: Learn advanced JavaScript framework also like
-            React & Vue.
-          </li>
-          <li>
-            Objective 2: Open Source Contributions (~Strong Github Portfolio)
-          </li>
-          <li>Objective 3: Node Backend Development Skills. js and Express.</li>
-          <li>
-            Objective 4: Master DevOps practices and tools like Docker,
-            Kubernetes.
-          </li>
-          <li>
-            Objective 5: Develop, and deliver production-quality full-stack
-            applications.
-          </li>
-        </ul>
+    </nav>
+
+    <div class="info">
+      <p>
+        Current Time in UTC:
+        <span id="currentTimeUTC" data-testid="currentTimeUTC"></span>
+      </p>
+      <p>Current Day: <span id="currentDay" data-testid="currentDay"></span></p>
+      <p>
+        Slack Email:
+        <span data-testid="slackEmail">oyefolutoyyib16@gmail.com</span>
+      </p>
+    </div>
+
+    <div class="goals">
+      <h2>My Tech Goals for the Next 2 Years</h2>
+
+      <div class="card-container">
+        <div class="card">
+          <h3>Mastering Frontend Development</h3>
+
+          <ul>
+            <li>
+              Solidify your understanding of HTML, CSS, and JavaScript
+              (including DOM manipulation and event handling).
+            </li>
+            <li>
+              Become proficient with a modern front-end framework like React,
+              Vue.js, or Angular (choose one and focus on it).
+            </li>
+            <li>
+              Learn the basics of responsive design and mobile-first
+              development.
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Building And Deploying Web Applications</h3>
+
+          <ul>
+            <li>
+              Build small, interactive web applications to solidify your
+              understanding of the chosen framework.
+            </li>
+            <li>
+              Utilize online resources like CodePen or frontend challenges to
+              practice writing clean and efficient code.
+            </li>
+            <li>
+              Practice basic animations and user interface (UI) effects with CSS
+              or a lightweight JavaScript library like GSAP.
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Gaining DevOps Expertise</h3>
+
+          <ul>
+            <li>
+              Foster a collaborative environment where developers and operations
+              teams work together towards shared goals.
+            </li>
+            <li>
+              Organize workshops or training sessions to improve understanding
+              of DevOps principles and tools across teams.
+            </li>
+            <li>
+              Implement DevOps metrics and track progress towards shared goals
+              for better visibility and motivation.
+            </li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Contributing To Open Source Project</h3>
+
+          <ul>
+            <li>
+              Identify and explore open-source projects that align with my
+              interests on platforms like GitHub and GitLab.
+            </li>
+            <li>
+              Start by contributing to documentation and bug fixes, gradually
+              moving on to more significant features.
+            </li>
+            <li>
+              Participate in community discussions, attend virtual meetups, and
+              collaborate with fellow developers.
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="links">
-        <a href="https://hng.tech/learn" target="_blank" data-testid="hngLink"
-          >Learn at HNG</a
-        >
-        <a href="https://keyword.dog" target="_blank" data-testid="keywordLink"
-          >Keyword Dog</a
-        >
-        <a
-          href="https://scrapeanyweb.site"
-          target="_blank"
-          data-testid="scrapeanywebLink"
-          >Scrape Any Web</a
-        >
-      </div>
-    </main>
+    </div>
+
+    <footer class="links">
+      <a href="https://hng.tech/learn" target="_blank" data-testid="hngLink"
+        >Learn at HNG</a
+      >
+      <a href="https://keyword.dog" target="_blank" data-testid="keywordLink"
+        >Keyword Dog</a
+      >
+      <a
+        href="https://scrapeanyweb.site"
+        target="_blank"
+        data-testid="scrapeanywebLink"
+        >Scrape Any Web</a
+      >
+    </footer>
   </body>
 </html>
