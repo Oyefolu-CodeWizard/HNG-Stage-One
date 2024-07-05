@@ -118,10 +118,7 @@ input:checked + .slider:before {
   margin-bottom: 20px;
   border-radius: 7px;
 }
-/* .goals {
-  width: 90%;
-  margin: 0 auto;
-} */
+
 .goals h2 {
   text-align: center;
   font-size: 3rem;
@@ -181,7 +178,33 @@ input:checked + .slider:before {
     text-align: center;
   }
   .profile img {
-    margin-right: 0;
-    margin-bottom: 10px;
+    display: none;
+  }
+  .mode {
+    display: none;
+  }
+  .mode-container {
+    margin-top: 1rem;
+  }
+  .profile div {
+    font-size: 1em;
+    margin-left: 15px;
+    margin-top: 10px;
+  }
+  .info {
+    margin-top: 40px;
+  }
+  .goals h2 {
+    font-size: 2rem;
+  }
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    width: 90%;
+    margin: 0;
+  }
+  .links a {
+    margin-right: 1.5rem;
   }
 }
